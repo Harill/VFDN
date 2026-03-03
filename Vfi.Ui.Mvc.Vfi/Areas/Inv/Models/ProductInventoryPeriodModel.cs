@@ -259,6 +259,7 @@ namespace Vfi.Ui.Mvc.Vfi.Areas.Inv.Models
         public double XuatThanhPham { get; set; }
         public double LuyKeXuat { get; set; }
 
+
         public double TonTong
         {
             get

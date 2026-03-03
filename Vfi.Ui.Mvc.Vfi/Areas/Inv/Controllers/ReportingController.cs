@@ -5253,6 +5253,7 @@ namespace Vfi.Ui.Mvc.Vfi.Areas.Inv.Controllers {
                             ReportMessage = reportMessage,
                         };
 
+
                         //var traHangById = sendBackInMonth.Where(ep => ep.ProductId == product.ProductId).ToList();
                         sp.DonHangTrongThang =
                             orderDetailInMonth.Where(od => od.ProductId == product.ProductId)
@@ -5542,9 +5543,9 @@ namespace Vfi.Ui.Mvc.Vfi.Areas.Inv.Controllers {
             bool chkLuyKeXuat,
             bool chkDonHangThangKe,
             bool chkDonHangConLai,
-            int customerId
-            , string productName
-            , string monthlyDate) {
+            int customerId,
+            string productName,
+            string monthlyDate) {
             if (string.IsNullOrWhiteSpace(monthlyDate))
                 return View(new GridModel(new List<SoLieuTongHopSanPham>()));
             var model = new List<SoLieuTongHopSanPham>();
@@ -5605,7 +5606,9 @@ namespace Vfi.Ui.Mvc.Vfi.Areas.Inv.Controllers {
                 //}
                 using (var vfi = new tammaContext()) {
                     var workGroup = vfi.WorkGroups.FirstOrDefault(x => x.Active);
-                    if (workGroup != null && workGroup.WorkGroupCode.Equals("AVF")) {
+                    if (workGroup != null 
+                        && workGroup.WorkGroupCode.Equals("AVF")
+                        ) {
                         return PartialView("PageProductReportTotalAVF", model.OrderBy(c => c.CustomerCode).ThenBy(p => p.ProductCode).ToList());
                     }
                 }
@@ -5626,7 +5629,7 @@ namespace Vfi.Ui.Mvc.Vfi.Areas.Inv.Controllers {
             var model = new List<SoLieuTongHopSanPham>();
             try {
                 model = GetProductReportTotal(chkLuyKeSX, chkLuyKeXuat, chkDonHangThangKe, chkDonHangConLai, 0,
-                                               "", monthlyDate,
+                                               "", monthlyDate, 
                                                (int)MyUtilities.Report.Calculate.All);
             }
             catch (Exception ex) {

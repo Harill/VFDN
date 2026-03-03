@@ -3081,7 +3081,7 @@
             this.textBox117.Style.Font.Size = Telerik.Reporting.Drawing.Unit.Pixel(12D);
             this.textBox117.Style.TextAlign = Telerik.Reporting.Drawing.HorizontalAlign.Center;
             this.textBox117.StyleName = "Data";
-            this.textBox117.Value = "=\"Quỹ Lương ngày \"+DayOfSX1";
+            this.textBox117.Value = "=\"Quỹ Lương ngày \"+ DayOfSX1\r\n";
             // 
             // panel22
             // 
