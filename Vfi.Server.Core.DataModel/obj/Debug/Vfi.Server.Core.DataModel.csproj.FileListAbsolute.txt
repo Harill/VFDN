@@ -16,4 +16,3 @@ C:\Job\vfdn\Vfi\Vfi.Server.Core.DataModel\bin\Debug\Vfi.Server.Core.DataModel.dl
 C:\Job\vfdn\Vfi\Vfi.Server.Core.DataModel\bin\Debug\Vfi.Server.Core.DataModel.pdb
 C:\Job\vfdn\Vfi\Vfi.Server.Core.DataModel\obj\Debug\Vfi.Server.Core.DataModel.dll
 C:\Job\vfdn\Vfi\Vfi.Server.Core.DataModel\obj\Debug\Vfi.Server.Core.DataModel.pdb
-C:\Job\vfdn\Vfi\Vfi.Server.Core.DataModel\obj\Debug\Vfi.Server.Core.DataModel.csprojResolveAssemblyReference.cache

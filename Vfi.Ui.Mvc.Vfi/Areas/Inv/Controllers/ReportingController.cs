@@ -4979,10 +4979,10 @@ namespace Vfi.Ui.Mvc.Vfi.Areas.Inv.Controllers {
                                          select x.MaterialUseDate).FirstOrDefault();
 
                     //var importSx1Date2 = (from x in vfi.ImportFormSX1
-                    //                     where x.ImportDate.Day == reportDate.Day &&
-                    //                           x.ImportDate.Month == reportDate.Month &&
-                    //                           x.ImportDate.Year == reportDate.Year
-                    //                     select x.MaterialUseDate).LastOrDefault();
+                    //                      where x.ImportDate.Day == reportDate.Day &&
+                    //                            x.ImportDate.Month == reportDate.Month &&
+                    //                            x.ImportDate.Year == reportDate.Year
+                    //                      select x.MaterialUseDate).LastOrDefault();
 
                     //var productionSections = (from ps in vfi.ProductionSections
                     //                          where ps.Active &&
